@@ -5,6 +5,7 @@ from pydantic import BaseModel, HttpUrl
 from typing import List, Optional
 import uvicorn
 import os
+import time
 
 from app.recommender import SHLRecommender
 
@@ -25,7 +26,14 @@ app.add_middleware(
 )
 
 # Initialize recommender
+print("🟢 1. FastAPI app created. Now initializing the AI Recommender (this might take a few minutes)...")
+start_time = time.time()
+
 recommender = SHLRecommender()
+
+end_time = time.time()
+print(f"🟢 2. Recommender completely initialized! It took {end_time - start_time} seconds.")
+print("🟢 3. Ready to open the port!")
 
 # Pydantic models
 class QueryRequest(BaseModel):
