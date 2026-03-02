@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+data/raw/*.json
+data/processed/*
+!data/processed/.gitkeep
+*.faiss
+*.npy
+*.pkl
+.vscode/

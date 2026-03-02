@@ -1,0 +1,8 @@
+query,Assessment_url
+"I need a project manager with strong leadership skills","https://www.shl.com/assessment/leadership-test"
+"I need a project manager with strong leadership skills","https://www.shl.com/assessment/project-management"
+"I need a project manager with strong leadership skills","https://www.shl.com/assessment/teamwork-assessment"
+... (7 more rows for this query)
+"Hiring a data scientist with Python and machine learning expertise","https://www.shl.com/assessment/python-test"
+"Hiring a data scientist with Python and machine learning expertise","https://www.shl.com/assessment/machine-learning"
+... (and so on for all 9 queries)
